@@ -1,0 +1,41 @@
+titles
+-
+emp_no INT PK
+title VARCHAR(50)
+from_date DATE
+to_date DATE
+
+salaries
+-
+emp_no INT FK
+salary INT
+from_date DATE
+to_date DATE
+
+employees
+-
+emp_no INT FK
+birth_date DATE
+first_name VARCHAR(50)
+last_name VARCHAR(50)
+gender VARCHAR(1)
+hire_date DATE
+
+dept_manager
+-
+dept_no INT FK
+emp_no INT FK
+from_date DATE
+to_date DATE
+
+dept_emp
+-
+emp_no INT FK
+dept_no INT FK
+from_date DATE
+to_date DATE
+
+departments
+-
+dept_no VARCHAR(4) PK
+dept_name VARCHAR(100)
