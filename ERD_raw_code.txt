@@ -24,14 +24,14 @@ hire_date DATE
 dept_manager
 -
 emp_no INT FK - employees.emp_no
-dept_no INT FK - departments.dept_no
+dept_no VARCHAR(4) FK - departments.dept_no
 from_date DATE
 to_date DATE
 
 dept_emp
 -
 emp_no INT FK -< employees.emp_no
-dept_no INT FK - departments.dept_no
+dept_no VARCHAR(4) FK - departments.dept_no
 from_date DATE
 to_date DATE
 
