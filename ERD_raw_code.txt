@@ -1,3 +1,17 @@
+employees
+-
+emp_no INT PK
+birth_date DATE
+first_name VARCHAR(50)
+last_name VARCHAR(50)
+gender VARCHAR(1)
+hire_date DATE
+
+departments
+-
+dept_no VARCHAR(4) PK
+dept_name VARCHAR(100)
+
 titles
 -
 emp_no INT FK - employees.emp_no
@@ -12,19 +26,10 @@ salary INT
 from_date DATE
 to_date DATE
 
-employees
--
-emp_no INT PK
-birth_date DATE
-first_name VARCHAR(50)
-last_name VARCHAR(50)
-gender VARCHAR(1)
-hire_date DATE
-
 dept_manager
 -
 dept_no VARCHAR(4) FK - departments.dept_no
-emp_no INT FK - employees.emp_no
+emp_no INT FK -< employees.emp_no
 from_date DATE
 to_date DATE
 
@@ -34,8 +39,3 @@ dept_no VARCHAR(4) FK - departments.dept_no
 emp_no INT FK -< employees.emp_no
 from_date DATE
 to_date DATE
-
-departments
--
-dept_no VARCHAR(4) PK
-dept_name VARCHAR(100)
